@@ -29,7 +29,7 @@ import (
 // Version placeholder, injected in Makefile
 var Version string
 
-func runTest(c *cli.Context, stClient *sthttp.Client, tester *speedtests.Tester) {
+func RunTest(c *cli.Context, stClient *sthttp.Client, tester *speedtests.Tester) {
 	// create our server object and load initial config
 	var testServer sthttp.Server
 
